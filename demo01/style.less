@@ -1,0 +1,36 @@
+@import url("reset1.css");
+
+.whb(@w,@h,@bg){
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@dir:row){
+    display: flex;
+    flex-direction:@dir;
+}
+html,body,.container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .box(column);
+}
+
+.container{
+    header{
+        height: .45rem;
+        width: 100%;
+        background: red;
+    }
+    section{
+       
+        flex: 1;
+        background: blue;
+        
+    }
+    footer{
+        height: .45rem;
+        width: 100%;
+        background: yellow;
+    }
+}
